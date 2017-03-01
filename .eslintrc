@@ -5,6 +5,7 @@
   },
   "extends": "eslint:recommended",
   "rules": {
+    "no-unused-vars": "error",
     "array-callback-return": "warn",
     "brace-style": ["error", "1tbs"],
     "complexity": ["warn", 20],
@@ -27,7 +28,7 @@
     "curly": ["error", "all"]
   },
   "globals": {
-    "angular": false,
+    "angular": false
   }
 }
 
