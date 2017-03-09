@@ -1,6 +1,6 @@
 # Raincatcher Workorder Angular User Interface
 
-This module is an AngularJS 1 implementation of Workorders for the Raincatcher project.
+This module is an Angular JS implementation of Workorders for the Raincatcher project.
 
 ## Setup
 
