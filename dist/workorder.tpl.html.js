@@ -19,7 +19,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '\n' +
     '    <md-list-item class="md-2-line" >\n' +
     '      <md-icon>\n' +
-    '      <workorder-status status="status"></workorder-status>\n' +
+    '      <workorder-status ng-class="ctrl.getColorIcon(status)" status="status"></workorder-status>\n' +
     '    </md-icon>\n' +
     '        <div class="md-list-item-text">\n' +
     '           <h3>{{status || "New"}}</h3>\n' +
