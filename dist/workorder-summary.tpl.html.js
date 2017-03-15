@@ -35,7 +35,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '      </md-card-title-text>\n' +
     '    </md-card-title>\n' +
     '    <md-card-content>\n' +
-    '      <p class="md-body-1" ng-if="! ctrl.result.stepResults || ctrl.result.stepResults | isEmpty">\n' +
+    '      <p class="md-body-1" ng-if="! ctrl.result.stepResults || ctrl.result.stepResults || isEmpty">\n' +
     '        No workflow submissions.\n' +
     '      </p>\n' +
     '      <workflow-result ng-if="ctrl.adminMode" result="ctrl.result" workflow="ctrl.workflow"></workflow-result>\n' +
