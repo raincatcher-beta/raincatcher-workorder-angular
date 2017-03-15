@@ -23,13 +23,6 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '\n' +
     '<form name="workorderForm" ng-submit="ctrl.done(workorderForm.$valid)" novalidate layout-padding layout-margin>\n' +
     '\n' +
-    '  <!--\n' +
-    '  <md-input-container>\n' +
-    '    <label for="workorderState">Status</label>\n' +
-    '    <input type="text" id="inputWorkorderType" name="workorderStatus" ng-model="ctrl.model.status" disabled="true">\n' +
-    '  </md-input-container>\n' +
-    '  -->\n' +
-    '\n' +
     '<div layout-gt-sm="row">\n' +
     '  <md-input-container class="md-block" flex-gt-sm>\n' +
     '    <label for="workorderType">Type</label>\n' +
