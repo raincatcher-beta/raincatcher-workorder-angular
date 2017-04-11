@@ -1,6 +1,6 @@
 {
   "name": "fh-wfm-workorder-angular",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "Angular UI Implementation of Workorders",
   "main": "lib/workorder-ng.js",
   "scripts": {
