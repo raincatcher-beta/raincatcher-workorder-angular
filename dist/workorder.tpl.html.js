@@ -53,7 +53,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '      <md-icon md-font-set="material-icons">event</md-icon>\n' +
     '      <div class="md-list-item-text">\n' +
     '        <h3>{{workorder.startTimestamp | date:\'yyyy-MM-dd\' }}</h3>\n' +
-    '        <p>Finish Date</p>\n' +
+    '        <p>Start Date</p>\n' +
     '      </div>\n' +
     '    </md-list-item>\n' +
     '    <md-divider></md-divider>\n' +
@@ -62,6 +62,24 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '      <md-icon md-font-set="material-icons">schedule</md-icon>\n' +
     '      <div class="md-list-item-text">\n' +
     '        <h3>{{workorder.startTimestamp | date:\'HH:mm:ss Z\' }}</h3>\n' +
+    '        <p>Start Time</p>\n' +
+    '      </div>\n' +
+    '    </md-list-item>\n' +
+    '    <md-divider></md-divider>\n' +
+    '\n' +
+    '    <md-list-item class="md-2-line" ng-if="workorder.finishTimestamp">\n' +
+    '      <md-icon md-font-set="material-icons">event</md-icon>\n' +
+    '      <div class="md-list-item-text">\n' +
+    '        <h3>{{workorder.finishTimestamp | date:\'yyyy-MM-dd\' }}</h3>\n' +
+    '        <p>Finish Date</p>\n' +
+    '      </div>\n' +
+    '    </md-list-item>\n' +
+    '    <md-divider></md-divider>\n' +
+    '\n' +
+    '    <md-list-item class="md-2-line" ng-if="workorder.finishTimestamp" >\n' +
+    '      <md-icon md-font-set="material-icons">schedule</md-icon>\n' +
+    '      <div class="md-list-item-text">\n' +
+    '        <h3>{{workorder.finishTimestamp | date:\'HH:mm:ss Z\' }}</h3>\n' +
     '        <p>Finish Time</p>\n' +
     '      </div>\n' +
     '    </md-list-item>\n' +

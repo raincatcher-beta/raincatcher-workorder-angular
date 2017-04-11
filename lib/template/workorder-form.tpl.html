@@ -84,19 +84,19 @@
 
 <div layout-gt-sm="row">
   <md-input-container class="md-block" flex-gt-sm>
-    <label for="inputFinishDate">Finish Date</label>
-    <input type="date"  id="inputFinishDate" name="finishDate" min="{{today}}" max="{{maxDate}}" ng-model="ctrl.model.finishDate" required>
-    <div ng-messages="workorderForm.finishDate.$error" ng-show="ctrl.submitted || workorderForm.finishDate.$dirty">
-      <div ng-message="required">A finish date is required.</div>
+    <label for="inputStartDate">Start Date</label>
+    <input type="date"  id="inputStartDate" name="startDate" min="{{today}}" max="{{maxDate}}" ng-model="ctrl.model.startDate" required>
+    <div ng-messages="workorderForm.startDate.$error" ng-show="ctrl.submitted || workorderForm.startDate.$dirty">
+      <div ng-message="required">A start date is required.</div>
       <div ng-message="min">Start Date should not be less than current date.</div>
       <div ng-message="max">Start Date is too far in the future.</div>
     </div>
   </md-input-container>
   <md-input-container class="md-block" flex-gt-sm>
-    <label for="inputFinishTime" >Finish Time</label>
-    <input type="time"  id="inputFinishTime" name="finishTime"  ng-model="ctrl.model.finishTime" required>
-    <div ng-messages="workorderForm.finishTime.$error" ng-show="ctrl.submitted || workorderForm.finishTime.$dirty">
-      <div ng-message="required">A finish time is required.</div>
+    <label for="inputStartTime" >Start Time</label>
+    <input type="time"  id="inputStartTime" name="startTime"  ng-model="ctrl.model.startTime" required>
+    <div ng-messages="workorderForm.startTime.$error" ng-show="ctrl.submitted || workorderForm.startTime.$dirty">
+      <div ng-message="required">A start time is required.</div>
     </div>
   </md-input-container>
 </div>
