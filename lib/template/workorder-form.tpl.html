@@ -101,6 +101,25 @@
   </md-input-container>
 </div>
 
+<div layout-gt-sm="row">
+    <md-input-container class="md-block" flex-gt-sm>
+        <label for="inputFinishDate">Finish Date</label>
+        <input type="date"  id="inputFinishDate" name="finishDate" min="{{today}}" max="{{maxDate}}" ng-model="ctrl.model.finishDate" required>
+        <div ng-messages="workorderForm.finishDate.$error" ng-show="ctrl.submitted || workorderForm.finishDate.$dirty">
+            <div ng-message="required">A finish date is required.</div>
+            <div ng-message="min">Finish Date should not be less than current date.</div>
+            <div ng-message="max">Finish Date is too far in the future.</div>
+        </div>
+    </md-input-container>
+    <md-input-container class="md-block" flex-gt-sm>
+        <label for="inputFinishTime" >Finish Time</label>
+        <input type="time"  id="inputFinishTime" name="finishTime"  ng-model="ctrl.model.finishTime" required>
+        <div ng-messages="workorderForm.finishTime.$error" ng-show="ctrl.submitted || workorderForm.finishTime.$dirty">
+            <div ng-message="required">A finish time is required.</div>
+        </div>
+    </md-input-container>
+</div>
+
 <div>
   <md-input-container class="md-block" ng-class="{ 'has-error' : workorderForm.summary.$invalid && !workorderForm.summary.$pristine }">
     <label for="inputSummary">Summary</label>

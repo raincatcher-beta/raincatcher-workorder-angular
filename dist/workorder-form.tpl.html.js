@@ -110,6 +110,25 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  </md-input-container>\n' +
     '</div>\n' +
     '\n' +
+    '<div layout-gt-sm="row">\n' +
+    '    <md-input-container class="md-block" flex-gt-sm>\n' +
+    '        <label for="inputFinishDate">Finish Date</label>\n' +
+    '        <input type="date"  id="inputFinishDate" name="finishDate" min="{{today}}" max="{{maxDate}}" ng-model="ctrl.model.finishDate" required>\n' +
+    '        <div ng-messages="workorderForm.finishDate.$error" ng-show="ctrl.submitted || workorderForm.finishDate.$dirty">\n' +
+    '            <div ng-message="required">A finish date is required.</div>\n' +
+    '            <div ng-message="min">Finish Date should not be less than current date.</div>\n' +
+    '            <div ng-message="max">Finish Date is too far in the future.</div>\n' +
+    '        </div>\n' +
+    '    </md-input-container>\n' +
+    '    <md-input-container class="md-block" flex-gt-sm>\n' +
+    '        <label for="inputFinishTime" >Finish Time</label>\n' +
+    '        <input type="time"  id="inputFinishTime" name="finishTime"  ng-model="ctrl.model.finishTime" required>\n' +
+    '        <div ng-messages="workorderForm.finishTime.$error" ng-show="ctrl.submitted || workorderForm.finishTime.$dirty">\n' +
+    '            <div ng-message="required">A finish time is required.</div>\n' +
+    '        </div>\n' +
+    '    </md-input-container>\n' +
+    '</div>\n' +
+    '\n' +
     '<div>\n' +
     '  <md-input-container class="md-block" ng-class="{ \'has-error\' : workorderForm.summary.$invalid && !workorderForm.summary.$pristine }">\n' +
     '    <label for="inputSummary">Summary</label>\n' +
