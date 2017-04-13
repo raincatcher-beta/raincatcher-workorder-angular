@@ -1,6 +1,6 @@
 {
   "name": "fh-wfm-workorder-angular",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Angular UI Implementation of Workorders",
   "main": "lib/workorder-ng.js",
   "scripts": {
@@ -21,7 +21,7 @@
     "angular-material": "1.0.7",
     "angular-messages": "1.5.3",
     "angular-ui-router": "0.2.18",
-    "fh-wfm-mediator": "0.2.0-0",
+    "fh-wfm-mediator": "0.3.3",
     "lodash": "4.7.0",
     "q": "1.4.1",
     "shortid": "2.2.6"
