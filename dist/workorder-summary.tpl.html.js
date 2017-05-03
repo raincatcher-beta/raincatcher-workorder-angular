@@ -8,7 +8,7 @@ try {
 ngModule.run(['$templateCache', function ($templateCache) {
   $templateCache.put('wfm-template/workorder-summary.tpl.html',
     '<md-toolbar class="content-toolbar">\n' +
-    '  <div class="md-toolbar-tools" ng-if="ctrl.workorder.id">\n' +
+    '  <div class="md-toolbar-tools" ng-if="ctrl.workorder.id || ctrl.workorder._localuid">\n' +
     '    <h3>\n' +
     '      Work order : {{ctrl.workorder.title}}\n' +
     '    </h3>\n' +
@@ -23,7 +23,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  </div>\n' +
     '</md-toolbar>\n' +
     '\n' +
-    '<div class="wfm-maincol-scroll" ng-if="ctrl.workorder.id">\n' +
+    '<div class="wfm-maincol-scroll" ng-if="ctrl.workorder.id || ctrl.workorder._localuid">\n' +
     '\n' +
     '  <workorder workorder="ctrl.workorder" status="ctrl.result.status" assignee="ctrl.assignee"></workorder>\n' +
     '\n' +

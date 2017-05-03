@@ -1,5 +1,5 @@
 <md-toolbar class="content-toolbar">
-  <div class="md-toolbar-tools" ng-if="ctrl.workorder.id">
+  <div class="md-toolbar-tools" ng-if="ctrl.workorder.id || ctrl.workorder._localuid">
     <h3>
       Work order : {{ctrl.workorder.title}}
     </h3>
@@ -14,7 +14,7 @@
   </div>
 </md-toolbar>
 
-<div class="wfm-maincol-scroll" ng-if="ctrl.workorder.id">
+<div class="wfm-maincol-scroll" ng-if="ctrl.workorder.id || ctrl.workorder._localuid">
 
   <workorder workorder="ctrl.workorder" status="ctrl.result.status" assignee="ctrl.assignee"></workorder>
 
