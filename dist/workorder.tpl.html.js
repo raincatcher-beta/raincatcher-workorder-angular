@@ -8,9 +8,9 @@ try {
 ngModule.run(['$templateCache', function ($templateCache) {
   $templateCache.put('wfm-template/workorder.tpl.html',
     '  <md-list>\n' +
-    '    <md-list-item class="md-2-line" >\n' +
+    '    <md-list-item class="md-2-line" ng-show="workorder.id">\n' +
     '      <md-icon md-font-set="material-icons">portrait</md-icon>\n' +
-    '      <div class="md-list-item-text" ng-show="workorder.id">\n' +
+    '      <div class="md-list-item-text" >\n' +
     '        <h3>{{workorder.id}}</h3>\n' +
     '        <p>Workorder id</p>\n' +
     '      </div>\n' +
