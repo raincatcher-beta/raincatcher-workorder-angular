@@ -14,7 +14,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '    </h3>\n' +
     '\n' +
     '    <span flex></span>\n' +
-    '    <md-button ng-if="ctrl.adminMode" class="md-icon-button" aria-label="Edit" ui-sref="app.workorder.edit({workorderId: ctrl.workorder.id})">\n' +
+    '    <md-button ng-if="ctrl.adminMode" class="md-icon-button" aria-label="Edit" ui-sref="app.workorder.edit({workorderId: ctrl.workorder.id || ctrl.workorder._localuid})">\n' +
     '      <md-icon md-font-set="material-icons">edit</md-icon>\n' +
     '    </md-button>\n' +
     '    <md-button ng-if="ctrl.adminMode" class="md-icon-button" aria-label="Delete" ng-click="ctrl.delete($event, ctrl.workorder)">\n' +
