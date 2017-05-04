@@ -10,7 +10,7 @@ ngModule.run(['$templateCache', function ($templateCache) {
     '  <md-list>\n' +
     '    <md-list-item class="md-2-line" >\n' +
     '      <md-icon md-font-set="material-icons">portrait</md-icon>\n' +
-    '      <div class="md-list-item-text">\n' +
+    '      <div class="md-list-item-text" ng-show="workorder.id">\n' +
     '        <h3>{{workorder.id}}</h3>\n' +
     '        <p>Workorder id</p>\n' +
     '      </div>\n' +
