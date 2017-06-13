@@ -54,18 +54,16 @@ As part of rendering Workorders, this module publishes and subscribes to several
 
 ### Published Topics
 
-Each of the following topics subscribes to the `error` and `done` topics. If the parameter includes a `topicUid`, the error topic should have the `topicUid` appended to the `done` or `error` topic.
-
 | Topic | Parameters |
 | ---- | ----------- |
 | *wfm:workorders:list* | NONE |
-| *wfm:workorders:read* | `{id: "IDOFWORKORDER", topicUID: "IDOFWORKORDER}` |
-| *wfm:workorders:create* | `{ workorderToCreate: workorderToCreate, topicUid: topicUid}` |
-| *wfm:workorders:update* | `{ workorderToUpdate: workorderToCreate, topicUid: topicUid}` |
-| *wfm:workorders:remove* | `{ id: "IDOFWORKORDER, topicUid: "IDOFWORKORDER"}` |
+| *wfm:workorders:read* | `{id: "IDOFWORKORDER"}` |
+| *wfm:workorders:create* | `{ workorderToCreate: workorderToCreate}` |
+| *wfm:workorders:update* | `{ workorderToUpdate: workorderToCreate}` |
+| *wfm:workorders:remove* | `{ id: "IDOFWORKORDER}` |
 | *wfm:workflows:list* | NONE |
-| *wfm:workflows:read* | `{id: workflowId, topicUid: workflowId}` |
+| *wfm:workflows:read* | `{id: workflowId}` |
 | *wfm:results:list* | NONE |
 | *wfm:users:list* | NONE |
-| *wfm:users:read* | `{id: userId, topicUid: userId}` |
+| *wfm:users:read* | `{id: userId}` |
 
